@@ -18,3 +18,8 @@ const monologueLines = [
 ];
 
 var totalBatteries = batteryBatches.reduce((total, amount) => total + amount);
+
+var wordCountMap = monologueLines.reduce((tally, line) => {
+  tally[line] = (tally[line] || 0) + 1;
+  return tally;
+}, {})
