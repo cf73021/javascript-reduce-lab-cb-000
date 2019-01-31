@@ -23,4 +23,4 @@ var wordCountMap = monologueLines.reduce((tally, line) => {
   return line_count = line.split(" ").length
   tally[line_count] = (tally[line_count] || 0) + 1;
   return tally;
-}, {})
+}, {});
